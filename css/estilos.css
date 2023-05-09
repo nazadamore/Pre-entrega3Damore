@@ -155,10 +155,12 @@ a {
 .contacto{
     grid-area: contacto;
     border: 1px solid black;
-    margin: 10px;
+    margin: 0 auto;
+    width: 800px;
+    padding: 20px;
 }
 .titulo-contacto{
-    margin: 30px;
+    margin: 20px;
 }
 .divform{
     display: flex;
