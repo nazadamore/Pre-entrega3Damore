@@ -177,3 +177,52 @@ a {
 .espacios{
     margin: 15px;
 }
+
+/* turnos */
+.cotainer-turnos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 4fr 100px;
+    grid-template-areas: 
+    "header   header   header"
+    "turnos   turnos   turnos"
+    "footer   footer   footer";
+    gap: 10px;
+}
+.turnos{
+    grid-area: turnos;
+    margin: 20px;
+}        
+.turnos h2 {
+    margin-bottom: 10px;
+}     
+.servicios {
+    list-style-type: none;
+}
+.servicios li { 
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 800px;
+}  
+.servicios li h3 {
+    margin: 0;
+}
+.servicios li p {
+    margin: 5px 0;
+}
+.solicitar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.foto-turnos{
+    display: flex;
+    background-color: rgb(255, 228, 196)  ;
+
+}
+.foto-img{
+    width: 200px;
+    margin: 10px;
+}
