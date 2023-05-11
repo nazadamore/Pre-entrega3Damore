@@ -142,7 +142,7 @@ a {
 }
 
 /* cotacto */
-.cotainer-contacto{
+.container-contacto{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 4fr 100px;
@@ -158,28 +158,17 @@ a {
     margin: 0 auto;
     width: 800px;
     padding: 20px;
+    background-color: bisque;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .titulo-contacto{
     margin: 20px;
 }
-.divform{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-.espacios{
-    margin: 15px;
-}
+
 
 /* turnos */
-.cotainer-turnos{
+.container-turnos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 4fr 100px;
@@ -191,7 +180,7 @@ a {
 }
 .turnos{
     grid-area: turnos;
-    margin: 20px;
+    margin: 10px;
 }        
 .turnos h2 {
     margin-bottom: 10px;
@@ -213,16 +202,76 @@ a {
 .solicitar {
     background-color: #007bff;
     color: #fff;
-    border: none;
+    border: 1px solid white;
     padding: 5px 10px;
     cursor: pointer;
 }
 .foto-turnos{
+    margin-bottom: 15px;
     display: flex;
-    background-color: rgb(255, 228, 196)  ;
-
+    background-color: rgb(255, 228, 196);
+    align-items: center;
+    border: 1px solid black;
+}
+.descripcion{
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
 }
 .foto-img{
     width: 200px;
     margin: 10px;
+    border: 0.5px solid white;
+}
+.titulo-turno{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/* PRODUCTOS */
+.container-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 2fr 2fr 100px;
+    grid-template-areas: 
+    "header      header      header"
+    "producto1   producto2   producto3"
+    "producto4   producto5   producto6"
+    "footer      footer      footer";
+    gap: 20px;
+}
+.producto1{
+    grid-area: producto1;
+    width: 300px;
+    margin: 0 auto;
+}
+.producto2{
+    grid-area: producto2;
+    width: 300px;
+    margin: 0 auto;
+}
+.producto3{
+    grid-area: producto3;
+    width: 300px;
+    margin: 0 auto;
+}
+.producto4{
+    grid-area: producto4;
+    width: 300px;
+    margin: 0 auto;
+}
+.producto5{
+    grid-area: producto5;
+    width: 300px;
+    margin: 0 auto;
+}
+.producto6{
+    grid-area: producto6;
+    width: 300px;
+    margin: 0 auto;
+}
+.productos-click:hover{
+    opacity: .7;
+    border: 1px solid white;
 }
