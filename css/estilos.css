@@ -275,3 +275,46 @@ a {
     opacity: .7;
     border: 1px solid white;
 }
+/* Nosotros */
+.container-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header      header"
+    "nosotros    fotos"
+    "footer      footer";
+    gap: 20px;
+}
+.nosotros{
+    grid-area: nosotros;
+    margin: 20px;
+    margin-left: 40px;
+}
+.fotos-nosotros{
+    grid-area: fotos;
+    display: grid;
+    justify-content: end;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+.fotardas{
+    width: 300px;
+}
+.titulo-nosotros{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.subtitulo-nosotros{
+    font-weight: bold;
+    font-size: 16px;
+}
+.ultimo-parrafo{
+    font-style: italic;
+    font-size: 14px;
+}
+.parrafo-fotos{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
