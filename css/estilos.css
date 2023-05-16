@@ -104,7 +104,7 @@ body{
     background-color: rgb(228, 184, 166);   
 }
 .carrusel{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 a {
     text-decoration: none;
@@ -191,7 +191,8 @@ a {
 .servicios li { 
     margin-bottom: 10px;
     padding: 10px;
-    width: 800px;
+    width: 400px;
+    text-align: center;
 }  
 .servicios li h3 {
     margin: 0;
@@ -296,7 +297,7 @@ a {
     display: grid;
     justify-content: end;
     margin-top: 50px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 .fotardas{
     width: 300px;
@@ -317,4 +318,247 @@ a {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+}
+
+
+/* MEDIA QUERIES INDEX*/
+@media screen and (max-width: 1200px){
+    .menu-footer li {
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 800px){
+    .container-todo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 1fr 1fr 100px;
+        grid-template-areas:
+        "header header"
+        "main   imag"
+        "sec    maps"
+        "footer footer";
+        gap: 10px;
+    }
+    .menu-container{
+        display: block;
+        flex-direction: row;
+        margin: 10px;
+    }
+    .menu-footer li {
+        margin-right: 30px;
+    }
+    .form{
+        width: 200px;
+    }
+    .main{
+        grid-area: main;
+        background-color: rgb(255, 216, 223);
+        padding: 10px;
+    }
+    .imagen-principal{
+        grid-area: imag;
+        background-color: rgb(255, 216, 223);
+        padding: 10px;
+    }
+    .imagen-secundaria{
+        grid-area: sec;
+        padding: 10px;
+        background-color: azure;
+    }
+}
+@media screen and (max-width: 480px){
+    .container-todo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px .5fr 1fr 1fr 1fr 100px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "imag"
+        "maps"
+        "sec"
+        "footer";
+        gap: 10px;
+    }
+    .menu-container{
+        display: flex;
+        margin: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu-container{
+        display: block;
+        flex-direction: row;
+        margin: 10px;
+    }
+    .menu-footer li {
+        margin-right: 30px;
+    }
+    .form{
+        width: 200px;
+    }   
+    .princi{
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: bisque;
+    }
+    .imagen-principal{
+        background-color: beige;
+    }
+}
+
+/* NOSOTROS*/
+@media screen and (max-width: 800px){
+    .container-nosotros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: 
+        "header      header"
+        "nosotros    fotos"
+        "footer      footer";
+        gap: 20px;
+    }
+    body{
+        background-color: rgb(179, 255, 231);
+    }
+
+}
+@media screen and (max-width: 480px){
+    .container-nosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr 1fr 100px;
+        grid-template-areas: 
+        "header"
+        "nosotros"
+        "fotos"
+        "footer";
+        gap: 10px;
+    }
+    .menu-container{
+        display: flex;
+        margin: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu-container{
+        display: block;
+        flex-direction: row;
+        margin: 10px;
+    }
+    .fotos-nosotros{
+        grid-area: fotos;
+        display: grid;
+        justify-content: center;
+    }
+    .fotardas{
+        width: 400px;
+    }
+    .titulo-nosotros{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .subtitulo-nosotros{
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .lista-nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .container-contacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: 
+        "header   header"
+        "contacto contacto"
+        "footer   footer";
+        gap: 10px;
+    }
+    .contacto{
+        grid-area: contacto;
+        border: 1px solid black;
+        margin: 0 auto;
+        width: 600px;
+        padding: 20px;
+        background-color: rgb(255, 163, 147);
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }  
+}
+@media screen and (max-width: 480px){
+    .container-contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: 
+        "header"
+        "contacto"
+        "footer";
+        gap: 10px;
+    }
+    .contacto{
+        grid-area: contacto;
+        border: 1px solid black;
+        margin: 0 auto;
+        width: 400px;
+        padding: 20px;
+        background-color: rgb(255, 198, 188);
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }  
+}
+
+@media screen and (max-width: 800px){
+    .container-turnos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 4fr 100px;
+        grid-template-areas: 
+        "header   header"
+        "turnos   turnos"
+        "footer   footer";
+        gap: 10px;
+    }       
+    .servicios li { 
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+    .foto-turnos{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+        background-color: rgb(255, 228, 196);
+        border: 1px solid black;
+    }
+    .titulo-turno{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .flex-turnos {
+    display: flex;
+    flex-direction: column;
+    }
+    .foto-turnos {
+    margin-bottom: 20px;
+    background-color: rgb(255, 205, 196);
+    }
+    .titulo-turno{
+        font-weight: bold;
+    }
 }
