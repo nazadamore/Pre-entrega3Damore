@@ -1,0 +1,138 @@
+.container-todo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 240px 400px 100px;
+    grid-template-areas: 
+    "header header header header header"
+    "main   main   main   main   imag"
+    "sec    sec    maps   maps   maps"
+    "footer footer footer footer footer";
+    gap: 10px;
+    .header{
+        grid-area: header;
+        background-color:rgb(255, 222, 208) ;
+        padding: 10px;
+        .menu-container{
+            display: flex;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+            .menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    list-style: none;
+                    margin: 10px;
+                    .link {
+                        text-decoration: none;
+                        color: black;
+                        border: 1px solid black;
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color:rgb(255, 199, 176);
+                    }
+                    .link:hover{
+                        color: white;
+                        background-color: rgb(255, 222, 208);
+                        border: 1px solid rgb(255, 199, 176)  ;
+                    }
+                }
+            }
+            form{
+                .form{
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .main{
+        grid-area: main;
+        background-color: bisque;
+        padding: 10px;
+        .titulo{
+            text-align: center;
+        }
+        .parrafo-principal{
+            word-spacing: 2px;
+            line-height: 1.5rem;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+    .imagen-principal{
+        grid-area: imag;
+        background-color: beige;
+        padding: 10px;
+        .centrar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .princi{
+                width: 300px;
+            }
+        }
+    }
+    .imagen-secundaria{
+        grid-area: sec;
+        padding: 10px;
+        background-color: rgb(255, 243, 225);
+        .carrusel{
+            margin-top: 20px;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .maps{
+        grid-area: maps;
+        padding: 10px;
+        background-color: azure;
+        .donde{
+            text-align: center;
+            margin: 15px;
+        }
+        .centrar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .mapa{
+                width: 90%;
+                height: 300px;
+                margin: 10px;
+            }
+        }
+    }
+    .footer{
+        grid-area: footer;
+        padding: 10px;
+        background-color: rgb(228, 184, 166);
+        .footer-container{
+            display: flex;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            .menu-footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    margin-right: 110px;
+                    .link-footer{
+                        text-decoration: none;
+                        color: black;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .copy{
+            text-align: center;
+            font-size: 12px;
+            background-color:rgb(228, 184, 166);
+        }
+    }
+}

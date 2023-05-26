@@ -1,0 +1,134 @@
+.container-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 2fr 2fr 100px;
+    grid-template-areas: 
+    "header      header      header"
+    "producto1   producto2   producto3"
+    "producto4   producto5   producto6"
+    "footer      footer      footer";
+    gap: 20px;
+    .header{
+        grid-area: header;
+        background-color:rgb(255, 222, 208) ;
+        padding: 10px;
+        .menu-container{
+            display: flex;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+            .menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    list-style: none;
+                    margin: 10px;
+                    .link {
+                        text-decoration: none;
+                        color: black;
+                        border: 1px solid black;
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color:rgb(255, 199, 176);
+                    }
+                    .link:hover{
+                        color: white;
+                        background-color: rgb(255, 222, 208);
+                        border: 1px solid rgb(255, 199, 176)  ;
+                    }
+                }
+            }
+            form{
+                .form{
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .producto1{
+        grid-area: producto1;
+        width: 300px;
+        margin: 0 auto;
+        .productos-click:hover{
+            opacity: .7;
+            border: 1px solid white;
+        }
+    }
+    .producto2{
+        grid-area: producto2;
+        width: 300px;
+        margin: 0 auto;
+        .productos-click:hover{
+            opacity: .7;
+            border: 1px solid white;
+        }
+    }
+    .producto3{
+        grid-area: producto3;
+        width: 300px;
+        margin: 0 auto;
+        .productos-click:hover{
+            opacity: .7;
+            border: 1px solid white;
+        }
+    }
+    .producto4{
+        grid-area: producto4;
+        width: 300px;
+        margin: 0 auto;
+        .productos-click:hover{
+            opacity: .7;
+            border: 1px solid white;
+        }
+    }
+    .producto5{
+        grid-area: producto5;
+        width: 300px;
+        margin: 0 auto;
+        .productos-click:hover{
+            opacity: .7;
+            border: 1px solid white;
+        }
+    }
+    .producto6{
+        grid-area: producto6;
+        width: 300px;
+        margin: 0 auto;
+        .productos-click:hover{
+            opacity: .7;
+            border: 1px solid white;
+        }
+    }
+    .footer{
+        grid-area: footer;
+        padding: 10px;
+        background-color: rgb(228, 184, 166);
+        .footer-container{
+            display: flex;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            .menu-footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    margin-right: 110px;
+                    .link-footer{
+                        text-decoration: none;
+                        color: black;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .copy{
+            text-align: center;
+            font-size: 12px;
+            background-color:rgb(228, 184, 166);
+        }
+    }
+}

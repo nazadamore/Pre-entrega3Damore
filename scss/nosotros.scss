@@ -1,0 +1,111 @@
+.container-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header      header"
+    "nosotros    fotos"
+    "footer      footer";
+    gap: 20px;
+    .header{
+        grid-area: header;
+        background-color:rgb(255, 222, 208) ;
+        padding: 10px;
+        .menu-container{
+            display: flex;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+            .menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    list-style: none;
+                    margin: 10px;
+                    .link {
+                        text-decoration: none;
+                        color: black;
+                        border: 1px solid black;
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color:rgb(255, 199, 176);
+                    }
+                    .link:hover{
+                        color: white;
+                        background-color: rgb(255, 222, 208);
+                        border: 1px solid rgb(255, 199, 176)  ;
+                    }
+                }
+            }
+            form{
+                .form{
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .nosotros{
+        grid-area: nosotros;
+        margin: 20px;
+        margin-left: 40px;
+        .titulo-nosotros{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .subtitulo-nosotros{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .ultimo-parrafo{
+            font-style: italic;
+            font-size: 14px;
+        }
+    }
+    .fotos-nosotros{
+        grid-area: fotos;
+        display: grid;
+        justify-content: end;
+        margin-top: 50px;
+        margin-right: 50px;
+        .fotardas{
+            width: 300px;
+        }
+        .parrafo-fotos{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    .footer{
+        grid-area: footer;
+        padding: 10px;
+        background-color: rgb(228, 184, 166);
+        .footer-container{
+            display: flex;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            .menu-footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    margin-right: 110px;
+                    .link-footer{
+                        text-decoration: none;
+                        color: black;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .copy{
+            text-align: center;
+            font-size: 12px;
+            background-color:rgb(228, 184, 166);
+        }
+    }
+}

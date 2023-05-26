@@ -1,0 +1,93 @@
+.container-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 4fr 100px;
+    grid-template-areas: 
+    "header   header   header"
+    "contacto contacto contacto"
+    "footer   footer   footer";
+    gap: 10px;
+    .header{
+        grid-area: header;
+        background-color:rgb(255, 222, 208) ;
+        padding: 10px;
+        .menu-container{
+            display: flex;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+            .menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    list-style: none;
+                    margin: 10px;
+                    .link {
+                        text-decoration: none;
+                        color: black;
+                        border: 1px solid black;
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color:rgb(255, 199, 176);
+                    }
+                    .link:hover{
+                        color: white;
+                        background-color: rgb(255, 222, 208);
+                        border: 1px solid rgb(255, 199, 176)  ;
+                    }
+                }
+            }
+            form{
+                .form{
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .contacto{
+        grid-area: contacto;
+        border: 1px solid black;    
+        margin: 0 auto;
+        width: 800px;
+        padding: 20px;
+        background-color: bisque;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        .titulo-contacto{
+            margin: 20px;
+        }
+    }
+    .footer{
+        grid-area: footer;
+        padding: 10px;
+        background-color: rgb(228, 184, 166);
+        .footer-container{
+            display: flex;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            .menu-footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    margin-right: 110px;
+                    .link-footer{
+                        text-decoration: none;
+                        color: black;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .copy{
+            text-align: center;
+            font-size: 12px;
+            background-color:rgb(228, 184, 166);
+        }
+    }
+}
+
