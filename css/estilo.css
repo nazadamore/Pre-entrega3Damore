@@ -37,14 +37,22 @@
   .container-todo .main {
     grid-area: main;
     background-color: bisque;
-    padding: 10px; }
+    padding: 10px;
+    transition: all 1s; }
     .container-todo .main .titulo {
-      text-align: center; }
+      text-align: center;
+      transition: all 1s;
+      border-radius: 4px; }
+    .container-todo .main .titulo:hover {
+      color: #f5a6a6;
+      background-color: beige; }
     .container-todo .main .parrafo-principal {
       word-spacing: 2px;
       line-height: 1.5rem;
       margin: 10px;
       padding: 10px; }
+  .container-todo .main:hover {
+    background-color: #ecdbc5; }
   .container-todo .imagen-principal {
     grid-area: imag;
     background-color: beige;
@@ -225,7 +233,8 @@
         display: flex;
         background-color: bisque;
         align-items: center;
-        border: 1px solid black; }
+        border: 1px solid black;
+        transition: 2s; }
         .container-turnos .turnos .flex-turnos .servicios .foto-turnos li {
           margin-bottom: 10px;
           padding: 10px;
@@ -250,6 +259,9 @@
           width: 200px;
           margin: 10px;
           border: 0.5px solid white; }
+      .container-turnos .turnos .flex-turnos .servicios .foto-turnos:hover {
+        background-color: #fdf8f2;
+        border: 1px #f7fcb7 solid; }
   .container-turnos .footer {
     grid-area: footer;
     padding: 10px;
@@ -438,7 +450,22 @@
     .container-nosotros .fotos-nosotros .parrafo-fotos {
       font-size: 20px;
       font-weight: bold;
-      text-align: center; }
+      text-align: center;
+      animation-name: destello;
+      animation-duration: 3s;
+      animation-iteration-count: infinite; }
+
+@keyframes destello {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
   .container-nosotros .footer {
     grid-area: footer;
     padding: 10px;

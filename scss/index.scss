@@ -51,15 +51,28 @@
         grid-area: main;
         background-color: bisque;
         padding: 10px;
+        transition: all 1s;
+        
         .titulo{
             text-align: center;
+            transition: all 1s;
+            border-radius: 4px;
+
+        }
+        .titulo:hover{
+            color: rgb(245, 166, 166);
+            background-color: beige;
         }
         .parrafo-principal{
             word-spacing: 2px;
             line-height: 1.5rem;
             margin: 10px;
             padding: 10px;
+            
         }
+    }
+    .main:hover{
+        background-color: rgb(236, 219, 197);
     }
     .imagen-principal{
         grid-area: imag;

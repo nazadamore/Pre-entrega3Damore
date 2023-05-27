@@ -62,6 +62,8 @@
                     background-color: rgb(255, 228, 196);
                     align-items: center;
                     border: 1px solid black;
+                    transition: 2s;
+
                     li { 
                         margin-bottom: 10px;
                         padding: 10px;
@@ -92,6 +94,10 @@
                         margin: 10px;
                         border: 0.5px solid white;
                     }
+                }
+                .foto-turnos:hover{
+                    background-color: rgb(253, 248, 242);
+                    border: 1px rgb(247, 252, 183) solid;    
                 }
             }
         }
