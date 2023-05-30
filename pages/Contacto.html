@@ -15,30 +15,42 @@
 </head>
 <body>
 <div class="container-contacto">
-    <header class="header">
-        <div class="menu-container">
-            <ul class="menu">
-                <li><a href="../index.html"><img src="../img/favicon-32x32.png" alt="logo"></a></li>
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./Contacto.html">Contacto</a></li>
-                <li><a class="link" href="./Turnos.html">Turnos</a></li>
-                <li><a class="link" href="./Productos.html">Productos</a></li>
-                <li><a class="link" href="./Nosotros.html">Nosotros</a></li>
-            </ul>
-            <form class="">
-                <div class="container-fluid form">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </form>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/favicon-32x32.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-    </header>
-
+    </nav>
+    <!-- Contenido principal: Formulario de contacto -->
     <main class="contacto">
         <h1 class="titulo-contacto">Contacto</h1>
-        <form class="row g-3">
+        <form class="row g-3 caja_form">
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Nombre y apellido</label>
                 <input type="text" class="form-control" id="inputEmail4" placeholder="carla sosa">
@@ -48,7 +60,7 @@
                 <input type="Email" class="form-control" id="inputPassword4" placeholder="carla@sosa.com">
             </div>
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Telefono</label>
+                <label for="inputAddress" class="form-label">Teléfono</label>
                 <input type="number" class="form-control" id="inputAddress" placeholder="11-">
             </div>
             <div class="mb-3">
@@ -60,7 +72,7 @@
             </div>
         </form>
     </main>
-    
+    <!-- Footer de la página -->
     <footer class="footer">
         <div class="footer-container">
             <ul class="menu-footer">

@@ -1,3 +1,17 @@
+@mixin productos{
+    width: 300px;
+    margin: 0 auto;
+    .comprar{
+        display: flex;
+        justify-content: center;
+    }
+}
+@mixin productos_hover{
+    opacity: .7;
+    border: 1px solid white;
+    
+}
+
 .container-productos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -12,93 +26,66 @@
         grid-area: header;
         background-color:rgb(255, 222, 208) ;
         padding: 10px;
-        .menu-container{
-            display: flex;
-            margin: 10px;
-            justify-content: space-between;
-            align-items: center;
-            .menu{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                li{
-                    list-style: none;
-                    margin: 10px;
-                    .link {
-                        text-decoration: none;
-                        color: black;
-                        border: 1px solid black;
-                        padding: 10px;
-                        border-radius: 10px;
-                        background-color:rgb(255, 199, 176);
-                    }
-                    .link:hover{
-                        color: white;
-                        background-color: rgb(255, 222, 208);
-                        border: 1px solid rgb(255, 199, 176)  ;
-                    }
+        ul{
+            li{
+                list-style: none;
+                margin: 10px;
+                .link {
+                    text-decoration: none;
+                    color: black;
+                    border: 1px solid black;
+                    padding: 10px;
+                    border-radius: 10px;
+                    background-color:rgb(255, 199, 176);
                 }
-            }
-            form{
-                .form{
-                    display: flex;
-                    margin-bottom: 10px;
+                .link:hover{
+                    color: white;
+                    background-color: rgb(255, 222, 208);
+                    border: 1px solid rgb(255, 199, 176)  ;
                 }
             }
         }
     }
     .producto1{
         grid-area: producto1;
-        width: 300px;
-        margin: 0 auto;
+        @include productos;
         .productos-click:hover{
-            opacity: .7;
-            border: 1px solid white;
+            @include productos_hover;
         }
     }
     .producto2{
         grid-area: producto2;
-        width: 300px;
-        margin: 0 auto;
+        @include productos;
         .productos-click:hover{
-            opacity: .7;
-            border: 1px solid white;
+            @include productos_hover;
         }
     }
     .producto3{
         grid-area: producto3;
-        width: 300px;
-        margin: 0 auto;
+        @include productos;
         .productos-click:hover{
-            opacity: .7;
-            border: 1px solid white;
+            @include productos_hover;
         }
     }
     .producto4{
         grid-area: producto4;
-        width: 300px;
-        margin: 0 auto;
+        @include productos;
         .productos-click:hover{
-            opacity: .7;
-            border: 1px solid white;
+            @include productos_hover;
         }
     }
     .producto5{
         grid-area: producto5;
-        width: 300px;
-        margin: 0 auto;
+        @include productos;
         .productos-click:hover{
-            opacity: .7;
-            border: 1px solid white;
+            @include productos_hover;
         }
     }
     .producto6{
         grid-area: producto6;
-        width: 300px;
-        margin: 0 auto;
+        @include productos;
         .productos-click:hover{
-            opacity: .7;
-            border: 1px solid white;
+            @include productos_hover;
         }
     }
     .footer{
@@ -116,10 +103,9 @@
                 justify-content: space-between;
                 li{
                     list-style: none;
-                    margin-right: 110px;
                     .link-footer{
                         text-decoration: none;
-                        color: black;
+                        color: rgb(51, 50, 50);
                         padding: 10px;
                     }
                 }

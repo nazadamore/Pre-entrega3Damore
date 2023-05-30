@@ -15,37 +15,48 @@
 </head>
 <body>
 <div class="container-todo">
-    <header class="header">
-        <div class="menu-container">
-            <ul class="menu">
-                <li><a href="./index.html"><img src="./img/favicon-32x32.png" alt="logo"></a></li>
-                <li><a class="link" href="./index.html">Inicio</a></li>
-                <li><a class="link" href="./pages/Contacto.html">Contacto</a></li>
-                <li><a class="link" href="./pages/Turnos.html">Turnos</a></li>
-                <li><a class="link" href="./pages/Productos.html">Productos</a></li>
-                <li><a class="link" href="./pages/Nosotros.html">Nosotros</a></li>
-            </ul>
-            <form class="">
-                <div class="container-fluid form">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </form>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./img/favicon-32x32.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./pages/Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./pages/Turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./pages/Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./pages/Nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-    </header>
+    </nav>
+    <!-- Contenido principal -->
     <main class="main">
             <h1 class="titulo">COSMETICA SAN</h1>
-            <p class="parrafo-principal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sit, odit illum, velit cum architecto mollitia voluptas incidunt maiores, tenetur error reiciendis temporibus totam. Totam vero, maxime consectetur accusantium, quasi quae, fuga fugiat optio perferendis culpa ab? Est distinctio, id officiis sapiente voluptates explicabo non incidunt possimus itaque cum laudantium!</p>
+            <p class="parrafo-principal">SAN encuentra su punto de unión entre el cuerpo, mente y espíritu del individuo; al alcanzar el equilibrio de las tres dimensiones, se tiene una existencia completa como ser vivo. Eterna amante de la cosmética, con mis productos busco el equilibrio en el órgano mas extenso de nuestro cuerpo; basada en materia prima natural, alimento verdadero para la piel, aromaterapia para el espíritu y los resultados en la mente, donde uno se ve y nota cambios reales.</p>
     </main>
-
+    <!-- Imagen principal -->
     <div class="imagen-principal">
-        <div class="centrar">
         <img class="princi" src="./img/princi.jpg" alt="imagen_principal_index">
-        </div>
     </div>
-
+    <!-- Carrusel de imágenes -->
     <div class="imagen-secundaria">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
@@ -56,31 +67,31 @@
             </div>
             <div class="carousel-inner carrusel">
                 <div class="carousel-item active">
-                    <a href=""><img src="./img/extracciones.jpg" class="d-block w-100" alt="img_extracciones"></a>
+                    <a href="./pages/Turnos.html"><img src="./img/extracciones.jpg" class="d-block w-100" alt="imagen de una extraccion"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <a href=""><h5>Extracciones</h5></a>
-                        <a href=""><p>Presione para mas información</p></a>
+                        <a href="./pages/Turnos.html"><h5>Extracciones</h5></a>
+                        <a href="./pages/Turnos.html"><p>Presione para mas información</p></a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <a href=""><img src="./img/peeling.jpg" class="d-block w-100" alt="img_peeling"></a>
+                    <a href="./pages/Turnos.html"><img src="./img/peeling.jpg" class="d-block w-100" alt="imagen de un peeling"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <a href=""><h5>Peeling</h5></a>
-                        <a href="">p>Presione para mas información</p></a>
+                        <a href="./pages/Turnos.html"><h5>Peeling</h5></a>
+                        <a href="./pages/Turnos.html"><p>Presione para mas información</p></a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <a href=""><img src="./img/radiofrecuencia.jpg" class="d-block w-100" alt="img_radriofrecuencia"></a>
+                    <a href="./pages/Turnos.html"><img src="./img/radiofrecuencia.jpg" class="d-block w-100" alt="imagen de una radiofrecuencia"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <a href=""><h5>Radiofrecuencia</h5></a>
-                        <a href="">p>Presione para mas información</p></a>
+                        <a href="./pages/Turnos.html"><h5>Radiofrecuencia</h5></a>
+                        <a href="./pages/Turnos.html"><p>Presione para mas información</p></a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <a href=""><img src="./img/otros.jpg" class="d-block w-100" alt="img_otros"></a>
+                    <a href="./pages/Turnos.html"><img src="./img/otros.jpg" class="d-block w-100" alt="imagen de otros servicios"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <a href="" style="color:black"><h5>Otros</h5></a>
-                        <a href="" style="color:black"><p>Presione para mas información</p></a>
+                        <a href="./pages/Turnos.html" style="color:black"><h5>Otros</h5></a>
+                        <a href="./pages/Turnos.html" style="color:black"><p>Presione para mas información</p></a>
                     </div>
                 </div>
             </div>
@@ -94,15 +105,15 @@
             </button>
         </div>
     </div>
-
+    <!-- Mapa de ubicación -->
     <div class="maps">
         <h3 class="donde"> ¿Donde estamos?</h3>
         <div class="centrar">
-        <iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.247270934645!2d-58.47066268471874!3d-34.59000248046568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca123dd98cb7%3A0x409ee210c6b80e0e!2sCosmetolog%C3%ADa%20San!5e0!3m2!1sen!2sar!4v1659251780294!5m2!1sen!2sar">
+        <iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.247270934645!2d-58.47066268471874!3d-34.59000248046568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca123dd98cb7%3A0x409ee210c6b80e0e!2sCosmetolog%C3%ADa%20San!5e0!3m2!1sen!2sar!4v1659251780294!5m2!1sen!2sar" alt="mapa de nuestra ubicacion">
         </iframe>
         </div>
     </div>
-
+    <!-- Footer de la página -->
     <footer class="footer">
         <div class="footer-container">
             <ul class="menu-footer">

@@ -15,27 +15,39 @@
 </head>
 <body>
 <div class="container-nosotros">
-    <header class="header">
-        <div class="menu-container">
-            <ul class="menu">
-                <li><a href="../index.html"><img src="../img/favicon-32x32.png" alt="logo"></a></li>
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="../pages/Contacto.html">Contacto</a></li>
-                <li><a class="link" href="../pages/Turnos.html">Turnos</a></li>
-                <li><a class="link" href="./Productos.html">Productos</a></li>
-                <li><a class="link" href="./Nosotros.html">Nosotros</a></li>
-            </ul>
-            <form class="">
-                <div class="container-fluid form">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </form>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/favicon-32x32.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-    </header>
-    
+    </nav>
+    <!-- Contenido principal: Quienes somos nosotros -->
     <main class="nosotros"> 
             <h1 class="titulo-nosotros">Bienvenidos a Cosmetica SAN</h1>
             <h5 class="subtitulo-nosotros">Misión:</h5>
@@ -48,16 +60,17 @@
                 <li>Profesionalismo</li>
                 <li>Tecnología</li>
             </ul>
-            <p class="parrafo-nosotros">DANEVA es una institución fundada por el Dr. Sergio Mur, reconocido médico especialista  en Cirugía Plástica (UBA) y Cirugía General de la región, (Miembro  de la Sociedad Argentina de Cirugía Plástica Estética y Reparadora, Miembro de la International Society of Aesthetic Plastic Surgery, Miembro de la American Society of Plastic Surgeons  y Miembro de la Asociación Argentina de Quemaduras) con el fin de brindar a la población una atención selecta, donde las personas encuentran en Daneva: comodidad, calidad de servicio y profesionales calificados, con tecnología de punta.</p>
-            <p class="parrafo-nosotros">Es muy habitual en el área de la salud que un profesional necesite la evaluación o interconsulta de otro especialista, por lo que Daneva ofrece la mayoría de las especialidades a fines para que el paciente no esté deambulando por la ciudad solicitando nuevamente otros turnos que enlentecen la tarea de los galenos y muchas veces es motivo de abandono de los tratamientos. Para esto, contamos con especialistas muy dedicados, de excelente formación académica, que brindan información calificada y que tienen como estandarte, la honestidad.</p>
-            <p class="ultimo-parrafo">Daneva no solamente es medicina selecta, es atención selecta y un lugar selecto. Conozca nuestras instalaciones y nuestra forma de trabajar.</p>
+            <p class="parrafo-nosotros">Cosmetica SAN es una institución fundada por el Dr. Sergio Mur, reconocido médico especialista  en Cirugía Plástica (UBA) y Cirugía General de la región, (Miembro  de la Sociedad Argentina de Cirugía Plástica Estética y Reparadora, Miembro de la International Society of Aesthetic Plastic Surgery, Miembro de la American Society of Plastic Surgeons  y Miembro de la Asociación Argentina de Quemaduras) con el fin de brindar a la población una atención selecta, donde las personas encuentran: comodidad, calidad de servicio y profesionales calificados, con tecnología de punta.</p>
+            <p class="parrafo-nosotros">Es muy habitual en el área de la salud que un profesional necesite la evaluación o interconsulta de otro especialista, por lo que se ofrece la mayoría de las especialidades a fines para que el paciente no esté deambulando por la ciudad solicitando nuevamente otros turnos que enlentecen la tarea de los galenos y muchas veces es motivo de abandono de los tratamientos. Para esto, contamos con especialistas muy dedicados, de excelente formación académica, que brindan información calificada y que tienen como estandarte, la honestidad.</p>
+            <p class="ultimo-parrafo">No solamente es medicina selecta, es atención selecta y un lugar selecto. Conozca nuestras instalaciones y nuestra forma de trabajar.</p>
     </main>
+    <!-- Sección de fotografias y horarios -->
     <section class="fotos-nosotros">
-        <img class="fotardas" src="../img/otros.jpg" alt="img_muestra">
+        <img class="fotardas" src="../img/otros.jpg" alt="imagen de muestra de nuestro trabajo">
         <p class="parrafo-fotos"> Lunes a Viernes (8:00 a 20:00)</p>
-        <img class="fotardas" src="../img/otros2.jpg" alt="img_muestra2">
+        <img class="fotardas" src="../img/otros2.jpg" alt="imagen de muestra de nuestro trabajo">
     </section>
-    
+    <!-- Footer de la página -->
     <footer class="footer">
         <div class="footer-container">
             <ul class="menu-footer">

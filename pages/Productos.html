@@ -15,32 +15,44 @@
 </head>
 <body>
 <div class="container-productos">
-    <header class="header">
-        <div class="menu-container">
-            <ul class="menu">
-                <li><a href="../index.html"><img src="../img/favicon-32x32.png" alt="logo"></a></li>
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./Contacto.html">Contacto</a></li>
-                <li><a class="link" href="./Turnos.html">Turnos</a></li>
-                <li><a class="link" href="./Productos.html">Productos</a></li>
-                <li><a class="link" href="./Nosotros.html">Nosotros</a></li>
-            </ul>
-            <form class="">
-                <div class="container-fluid form">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </form>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/favicon-32x32.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="./Nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-    </header>
-
-    <div class="card producto1 text-bg-light mb-3">
+    </nav>
+    <!-- Contenido principal: Los productos que se venden -->
+    <div class="card producto1 text-bg-light mb-3 ">
         <a href=""><img src="../img/producto1.jpg!bw700" class="card-img-top productos-click" alt="img_producto1"></a>
-        <div class="card-body">
-            <h5 class="card-title">Producto 1</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="card-body ">
+            <h5 class="card-title">Serum Iluminador</h5>
+            <p class="card-text">Este producto es un serum facial rejuvenecedor con una potente fórmula antiarrugas. Contiene ingredientes como ácido hialurónico y colágeno.</p>
         </div>
         <div class="card-footer">
             <a href="#" class="btn btn-primary comprar">Comprar</a>
@@ -49,8 +61,8 @@
     <div class="card producto2 text-bg-light mb-3">
         <a href=""><img src="../img/producto2.png" class="card-img-top productos-click" alt="img_producto2"></a>
         <div class="card-body">
-            <h5 class="card-title">Producto 2</h5>
-            <p class="card-text">This card has supporting text VSFB REGVREGBT below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">Mascarilla Purificante</h5>
+            <p class="card-text">Este producto es un bálsamo labial con ingredientes naturales que hidratan y suavizan los labios. Protección duradera contra la sequedad.</p>
         </div>
         <div class="card-footer">
             <a href="#" class="btn btn-primary comprar">Comprar</a>
@@ -59,8 +71,8 @@
     <div class="card producto3 text-bg-light mb-3">
         <a href=""><img src="../img/producto3.png" class="card-img-top productos-click" alt="img_producto3"></a>
         <div class="card-body">
-            <h5 class="card-title">Producto 3</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <h5 class="card-title">Aceite Reparador</h5>
+            <p class="card-text">Este producto es una loción corporal con una fragancia suave y relajante. Hidrata y nutre la piel, dejándola suave y sedosa al tacto.</p>
         </div>
         <div class="card-footer">
             <a href="#" class="btn btn-primary comprar">Comprar</a>
@@ -69,8 +81,8 @@
     <div class="card producto4 text-bg-light mb-3">
         <a href=""><img src="../img/producto4.jpg" class="card-img-top productos-click" alt="img_producto4"></a>
         <div class="card-body">
-            <h5 class="card-title">Producto 4</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Crema Renovadora</h5>
+            <p class="card-text">Este producto es una crema facial hidratante que contiene ingredientes naturales y antioxidantes para nutrir y revitalizar la piel.</p>
         </div>
         <div class="card-footer">
             <a href="#" class="btn btn-primary comprar">Comprar</a>
@@ -79,8 +91,8 @@
     <div class="card producto5 text-bg-light mb-3">
         <a href=""><img src="../img/producto5.jpg" class="card-img-top productos-click" alt="img_producto5"></a>
         <div class="card-body">
-            <h5 class="card-title">Producto 5</h5>
-            <p class="card-text">This card has supporting text VSFB REGVREGBT below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">Gel Exfoliante</h5>
+            <p class="card-text">Este producto es un exfoliante facial suave que ayuda a eliminar las células muertas de la piel y promueve una apariencia más fresca y radiante.</p>
         </div>
         <div class="card-footer">
             <a href="#" class="btn btn-primary comprar">Comprar</a>
@@ -89,8 +101,8 @@
     <div class="card producto6 text-bg-light mb-3">
         <a href=""><img src="../img/producto6.jpg" class="card-img-top productos-click" alt="img_producto6"></a>
         <div class="card-body">
-            <h5 class="card-title">Producto 6</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <h5 class="card-title">Desmaquillante liquido</h5>
+            <p class="card-text">Este producto es un desmaquillante bifásico de ojos y labios. Elimina de manera efectiva el maquillaje resistente al agua sin dejar residuos grasos.</p>
         </div>
         <div class="card-footer">
             <a href="#" class="btn btn-primary comprar">Comprar</a>
