@@ -34,7 +34,7 @@
         "footer";
         gap: 10px;
         .contacto{
-            transition: 3s;
+            transition: 1s;
             grid-area: contacto;
             border: 1px solid black;
             margin: 0 auto;
@@ -86,7 +86,7 @@
     .container-productos{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
         grid-template-areas: 
         "header"
         "producto1"
@@ -98,15 +98,9 @@
         "footer";
         gap: 20px;
         background-color: rgb(250, 242, 231);
-        .card{
-            width: 230px;
-            height: 400px;
-        }
-        .card-footer{
-            text-align: center;
-            .comprar{
-                display: flex;
-                justify-content: center;
+        .footer{
+            .footer-container{
+                display: none;
             }
         }
     }
@@ -143,10 +137,79 @@
             flex-direction: column;
             justify-content: center;
             align-items: center ;
-            margin: 10px;
             .fotardas{
                 width: 400px;
                 margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    /* MEDIA DEL INDEX */
+    .container-todo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px .5fr 1fr 1fr 1fr 50px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "imag"
+        "maps"
+        "sec"
+        "footer";
+        gap: 10px;
+        .footer{
+            .footer-container{
+                display: none;
+            }
+        }
+    }
+    /* MEDIA DE CONTACTO */
+    .container-contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 50px;
+        grid-template-areas: 
+        "header"
+        "contacto"
+        "footer";
+        gap: 10px;
+        .footer{
+            .footer-container{
+                display: none;
+            }
+        }
+    }
+    /* MEDIA DE TURNOS */
+    .container-turnos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 4fr 50px;
+        grid-template-areas: 
+        "header   header"
+        "turnos   turnos"
+        "footer   footer";
+        gap: 10px;
+        .footer{
+            .footer-container{
+                display: none;
+            }
+        }
+    }
+    /* MEDIA NOSOTROS */
+    .container-nosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 50px;
+        grid-template-areas: 
+        "header"
+        "nosotros"
+        "fotos"
+        "footer";
+        gap: 10px;
+        .footer{
+            .footer-container{
+                display: none;
             }
         }
     }

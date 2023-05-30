@@ -196,14 +196,16 @@
         background-color: bisque;
         align-items: center;
         border: 1px solid black;
-        transition: .5s; }
+        transition: .5s;
+        border-radius: 5px; }
         .container-turnos .turnos .flex-turnos .servicios .foto-turnos li {
           margin-bottom: 10px;
           padding: 10px;
           width: 400px;
           text-align: center; }
           .container-turnos .turnos .flex-turnos .servicios .foto-turnos li h3 {
-            margin: 0; }
+            margin: 0;
+            font-size: 20px; }
           .container-turnos .turnos .flex-turnos .servicios .foto-turnos li p {
             margin: 5px 0; }
           .container-turnos .turnos .flex-turnos .servicios .foto-turnos li .solicitar {
@@ -218,7 +220,7 @@
           border: 1px solid white;
           text-align: center; }
         .container-turnos .turnos .flex-turnos .servicios .foto-turnos .foto-img {
-          width: 200px;
+          width: 170px;
           margin: 10px;
           border: 0.5px solid white; }
       .container-turnos .turnos .flex-turnos .servicios .foto-turnos:hover {
@@ -469,7 +471,7 @@
     grid-template-areas: "header" "contacto" "footer";
     gap: 10px; }
     .container-contacto .contacto {
-      transition: 3s;
+      transition: 1s;
       grid-area: contacto;
       border: 1px solid black;
       margin: 0 auto;
@@ -507,18 +509,12 @@
   .container-productos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
     grid-template-areas: "header" "producto1" "producto2" "producto3" "producto4" "producto5" "producto6" "footer";
     gap: 20px;
     background-color: #faf2e7; }
-    .container-productos .card {
-      width: 230px;
-      height: 400px; }
-    .container-productos .card-footer {
-      text-align: center; }
-      .container-productos .card-footer .comprar {
-        display: flex;
-        justify-content: center; }
+    .container-productos .footer .footer-container {
+      display: none; }
   /* MEDIA NOSOTROS */
   .container-nosotros {
     display: grid;
@@ -542,11 +538,48 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin: 10px; }
+      align-items: center; }
       .container-nosotros .fotos-nosotros .fotardas {
         width: 400px;
         margin-bottom: 20px; } }
+
+@media screen and (max-width: 400px) {
+  /* MEDIA DEL INDEX */
+  .container-todo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px .5fr 1fr 1fr 1fr 50px;
+    grid-template-areas: "header" "main" "imag" "maps" "sec" "footer";
+    gap: 10px; }
+    .container-todo .footer .footer-container {
+      display: none; }
+  /* MEDIA DE CONTACTO */
+  .container-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: "header" "contacto" "footer";
+    gap: 10px; }
+    .container-contacto .footer .footer-container {
+      display: none; }
+  /* MEDIA DE TURNOS */
+  .container-turnos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 4fr 50px;
+    grid-template-areas: "header   header" "turnos   turnos" "footer   footer";
+    gap: 10px; }
+    .container-turnos .footer .footer-container {
+      display: none; }
+  /* MEDIA NOSOTROS */
+  .container-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 50px;
+    grid-template-areas: "header" "nosotros" "fotos" "footer";
+    gap: 10px; }
+    .container-nosotros .footer .footer-container {
+      display: none; } }
 
 * {
   margin: 0;
