@@ -12,17 +12,17 @@
         "sec"
         "footer";
         gap: 10px;
-    }
-    .main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        background-color: rgb(255, 216, 223);
-    }
-    .imagen-principal{
-        background-color: beige;
-    }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            background-color: rgb(255, 216, 223);
+        }
+        .imagen-principal{
+            background-color: beige;
+        }
+    }   
     /* MEDIA DE CONTACTO */
     .container-contacto{
         display: grid;
@@ -38,7 +38,7 @@
             grid-area: contacto;
             border: 1px solid black;
             margin: 0 auto;
-            width: 500px;
+            width: 90%;
             padding: 20px;
             background-color: rgb(255, 198, 188);
             margin-top: 20px;
@@ -116,6 +116,7 @@
         "footer";
         gap: 10px;
         .nosotros{
+            margin-bottom: 0;
             .titulo-nosotros{
                 text-align: center;
                 margin-bottom: 30px;
@@ -136,9 +137,13 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center ;
+            align-items: center;
+            margin-left: 10%;
+            margin-top: 0;
             .fotardas{
-                width: 400px;
+                margin: 0;
+                padding: 0;
+                width: 70%;
                 margin-bottom: 20px;
             }
         }
@@ -158,9 +163,18 @@
         "sec"
         "footer";
         gap: 10px;
+        font-size: 70%;
+        .main{
+            .titulo{
+                font-size: 20px;
+            }
+        }
         .footer{
             .footer-container{
                 display: none;
+            }
+            .copy{
+                font-size: 10px;
             }
         }
     }
@@ -174,9 +188,13 @@
         "contacto"
         "footer";
         gap: 10px;
+        font-size: 70%;
         .footer{
             .footer-container{
                 display: none;
+            }
+            .copy{
+                font-size: 10px;
             }
         }
     }
@@ -190,9 +208,29 @@
         "turnos   turnos"
         "footer   footer";
         gap: 10px;
+        font-size: 60%;
+        .turnos{
+            .flex-turnos{
+                .servicios{
+                    .foto-turnos{
+                        li{
+                            h3{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .foto-img {
+            max-width: 50px;
+        }
         .footer{
             .footer-container{
                 display: none;
+            }
+            .copy{
+                font-size: 10px;
             }
         }
     }
@@ -207,10 +245,41 @@
         "fotos"
         "footer";
         gap: 10px;
+        font-size: 60%;
+        .nosotros{
+            margin-bottom: 0;
+            .titulo-nosotros{
+                font-size: 14px;
+            }
+            .subtitulo-nosotros{
+                font-size: 11px;
+            }
+            .ultimo-parrafo{
+                font-size: 10px;
+            }
+        }
+        .fotos-nosotros{
+            margin-left: 10%;
+            margin-top: 0;
+            .fotardas{
+                margin: 0;
+                padding: 0;
+                width: 70%;
+                margin-bottom: 20px;
+            }
+        }
         .footer{
             .footer-container{
                 display: none;
             }
+            .copy{
+                font-size: 10px;
+            }
         }
     }
+}
+.bg-menuHamb {
+    background-color: blanchedalmond;
+    padding: 1rem;
+    z-index: 3;
 }

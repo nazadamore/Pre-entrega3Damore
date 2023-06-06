@@ -24,8 +24,9 @@
     gap: 20px;
     .header{
         grid-area: header;
-        background-color:rgb(255, 222, 208) ;
+        background-color:blanchedalmond;
         padding: 10px;
+        z-index:2;
         ul{
             li{
                 list-style: none;
@@ -36,7 +37,7 @@
                     border: 1px solid black;
                     padding: 10px;
                     border-radius: 10px;
-                    background-color:rgb(255, 199, 176);
+                    background-color:rgb(255, 215, 193);
                 }
                 .link:hover{
                     color: white;
@@ -117,4 +118,7 @@
             background-color:rgb(228, 184, 166);
         }
     }
+}
+.logo{
+    border-radius: 5px;
 }
