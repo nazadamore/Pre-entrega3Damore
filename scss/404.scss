@@ -22,3 +22,56 @@
         }
     }
 }
+
+    .container_404{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        .texto_404{
+            width: 50%;
+            .titulo_404{
+                margin: 20px;
+                text-align: center;
+            }
+            .subtitulo_404{
+                margin: 10px;
+                text-align: center;
+            }
+            .form_404{
+                margin: 10px;
+            }
+            .boton_404{
+                text-align: center;
+                .btn{
+                    border: 1px solid rgb(0, 0, 0);
+                    margin: 10px;
+                    .link{
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .imagen_404{
+            width: 300px;
+            margin: 0 auto;
+            
+            .imagen_mal{
+                width: 100%;
+            }
+        }
+    }
+    .footer{
+        background-color: rgb(228, 184, 166);
+        text-align: center;
+        padding: 30px;
+        .container_footer{
+            margin: 10px;
+            .copy{
+                font-size: 12px;
+                background-color:rgb(228, 184, 166);
+            }
+        }
+    }
