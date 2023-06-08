@@ -1,33 +1,39 @@
-.header{
-    grid-area: header;
-    background-color:rgb(255, 222, 208) ;
-    padding: 10px;
-    ul{
-        li{
-            list-style: none;
-            margin: 10px;
-            .link {
-                text-decoration: none;
-                color: black;
-                border: 1px solid black;
-                padding: 10px;
-                border-radius: 10px;
-                background-color:rgb(255, 199, 176);
-            }
-            .link:hover{
-                color: white;
-                background-color: rgb(255, 222, 208);
-                border: 1px solid rgb(255, 199, 176)  ;
+.page_container_404 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        background-color: blanchedalmond;
+        padding: 10px;
+        height: 100px;
+        ul{
+            li{
+                list-style: none;
+                margin: 10px;
+                .link {
+                    text-decoration: none;
+                    color: black;
+                    border: 1px solid black;
+                    padding: 10px;
+                    border-radius: 10px;
+                    background-color:rgb(255, 215, 193);
+                }
+                .link:hover{
+                    color: white;
+                    background-color: rgb(255, 222, 208);
+                    border: 1px solid rgb(255, 199, 176)  ;
+                }
             }
         }
     }
-}
 
     .container_404{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 10px;
+        flex-grow: 1;
         .texto_404{
             width: 50%;
             .titulo_404{
@@ -55,11 +61,11 @@
             }
         }
         .imagen_404{
-            width: 300px;
+            width: 600px;
             margin: 0 auto;
-            
             .imagen_mal{
                 width: 100%;
+                border-radius: 10px;
             }
         }
     }
@@ -75,3 +81,28 @@
             }
         }
     }
+
+@media screen and (max-width: 400px) {
+    .container_404{
+        flex-direction: column;
+        margin: 0;
+        .texto_404{
+            width: 100%;
+            margin: 0;
+                .btn{
+                    border: 1px solid rgb(0, 0, 0);
+                    margin: 10px;
+                    margin: 0;
+                }
+            }
+        
+        .imagen_404{
+            width: 100%;
+            margin: 0 auto;
+            
+            .imagen_mal{
+                width: 10   0%;
+            }
+        }
+    }
+}

@@ -43,6 +43,27 @@
         .titulo-contacto{
             margin: 20px;
         }
+        .redes{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .contenedor_redes{
+                border: .5px rgb(192, 157, 157) solid;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: rgb(255, 195, 160);
+                .logo_contacto{
+                    width: 35px;
+                }
+                .logo_contacto_wpp{
+                    width: 40px;
+                }
+            }
+            .contenedor_redes:hover{
+                opacity: .9;
+                background-color: rgb(255, 213, 189);
+            }
+        }
     }
     .footer{
         grid-area: footer;
