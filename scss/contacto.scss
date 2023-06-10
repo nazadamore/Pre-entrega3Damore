@@ -1,3 +1,14 @@
+@mixin redes{
+    width: 35px;
+    margin: 7px;
+}
+
+body{
+    background-image: url("../img/textura--fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .container-contacto{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -7,30 +18,6 @@
     "contacto contacto contacto"
     "footer   footer   footer";
     gap: 10px;
-    .header{
-        grid-area: header;
-        background-color:blanchedalmond;
-        padding: 10px;
-        ul{
-            li{
-                list-style: none;
-                margin: 10px;
-                .link {
-                    text-decoration: none;
-                    color: black;
-                    border: 1px solid black;
-                    padding: 10px;
-                    border-radius: 10px;
-                    background-color:rgb(255, 215, 193);
-                }
-                .link:hover{
-                    color: white;
-                    background-color: rgb(255, 222, 208);
-                    border: 1px solid rgb(255, 199, 176)  ;
-                }
-            }
-        }
-    }
     .contacto{
         grid-area: contacto;
         border: 1px solid black;    
@@ -50,13 +37,26 @@
             .contenedor_redes{
                 border: .5px rgb(192, 157, 157) solid;
                 border-radius: 5px;
-                padding: 5px;
                 background-color: rgb(255, 195, 160);
-                .logo_contacto{
-                    width: 35px;
+                .logo_contacto_fb{
+                    @include redes;
+                    
+                }
+                .logo_contacto_fb:hover{
+                    transform: scale(1.3);
+                }
+                .logo_contacto_ig{
+                    @include redes;
+                }
+                .logo_contacto_ig:hover{
+                    transform: scale(1.3);
                 }
                 .logo_contacto_wpp{
                     width: 40px;
+                    margin: 7px;
+                }
+                .logo_contacto_wpp:hover{
+                    transform: scale(1.3);
                 }
             }
             .contenedor_redes:hover{
@@ -68,7 +68,7 @@
     .footer{
         grid-area: footer;
         padding: 10px;
-        background-color: rgb(228, 184, 166);
+        background-color: rgba(228, 184, 166, .7);
         .footer-container{
             display: flex;
             margin: 10px;
@@ -91,7 +91,6 @@
         .copy{
             text-align: center;
             font-size: 12px;
-            background-color:rgb(228, 184, 166);
         }
     }
 }

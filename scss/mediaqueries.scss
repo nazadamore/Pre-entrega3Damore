@@ -100,7 +100,6 @@
         "producto6"
         "footer";
         gap: 20px;
-        background-color: rgb(250, 242, 231);
         .footer{
             .footer-container{
                 display: none;
@@ -150,6 +149,11 @@
                 margin-bottom: 20px;
             }
         }
+    }
+    .bg-menuHamb {
+        background-color:rgba(247, 199, 191, .9);
+        padding: 1rem;
+        z-index: 3;
     }
 }
 @media screen and (max-width: 400px){
@@ -286,9 +290,4 @@
             width: 80%;
         }
     }
-}
-.bg-menuHamb {
-    background-color: blanchedalmond;
-    padding: 1rem;
-    z-index: 3;
 }

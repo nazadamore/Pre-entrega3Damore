@@ -3,30 +3,6 @@
         display: flex;
         flex-direction: column;
     }
-    .header{
-        background-color: blanchedalmond;
-        padding: 10px;
-        height: 100px;
-        ul{
-            li{
-                list-style: none;
-                margin: 10px;
-                .link {
-                    text-decoration: none;
-                    color: black;
-                    border: 1px solid black;
-                    padding: 10px;
-                    border-radius: 10px;
-                    background-color:rgb(255, 215, 193);
-                }
-                .link:hover{
-                    color: white;
-                    background-color: rgb(255, 222, 208);
-                    border: 1px solid rgb(255, 199, 176)  ;
-                }
-            }
-        }
-    }
 
     .container_404{
         display: flex;
@@ -70,14 +46,13 @@
         }
     }
     .footer{
-        background-color: rgb(228, 184, 166);
+        background-color: rgba(228, 184, 166, .7);
         text-align: center;
         padding: 30px;
         .container_footer{
             margin: 10px;
             .copy{
                 font-size: 12px;
-                background-color:rgb(228, 184, 166);
             }
         }
     }

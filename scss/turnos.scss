@@ -17,37 +17,24 @@
     "turnos   turnos   turnos"
     "footer   footer   footer";
     gap: 10px;
-    .header{
-        grid-area: header;
-        background-color:rgb(255, 235, 205);
-        padding: 10px;
-        ul{
-            li{
-                list-style: none;
-                margin: 10px;
-                .link {
-                    text-decoration: none;
-                    color: black;
-                    border: 1px solid black;
-                    padding: 10px;
-                    border-radius: 10px;
-                    background-color:rgb(255, 215, 193);
-                }
-                .link:hover{
-                    color: white;
-                    background-color: rgb(255, 222, 208);
-                    border: 1px solid rgb(255, 199, 176)  ;
-                }
-            }
-        }
-    }
     .turnos{
         grid-area: turnos;
         margin: 10px;
-        .titulo-turno {
-            margin-bottom: 10px;
-            padding-bottom: 10px;
+        .titulo-centrado{
             text-align: center;
+            .titulo-turno {
+                color: white;
+                display: inline;
+                margin-bottom: 10px;
+                text-align: center;
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .titulo-turno:hover{
+                color: rgb(254, 255, 220);
+                border: 1px solid rgb(254, 255, 220);
+            }
         }
         .flex-turnos{
             .servicios{
@@ -100,7 +87,7 @@
     .footer{
         grid-area: footer;
         padding: 10px;
-        background-color: rgb(228, 184, 166);
+        background-color: rgba(228, 184, 166, .7);
         .footer-container{
             display: flex;
             margin: 10px;
@@ -124,7 +111,6 @@
         .copy{
             text-align: center;
             font-size: 12px;
-            background-color:rgb(228, 184, 166);
         }
     }
 }

@@ -1,0 +1,28 @@
+.footer{
+    grid-area: footer;
+    padding: 10px;
+    background-color: rgba(228, 184, 166, .7);
+    .footer-container{
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        .menu-footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                list-style: none;
+                .link-footer{
+                    text-decoration: none;
+                    color: black;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .copy{
+        text-align: center;
+        font-size: 12px;
+    }
+}
