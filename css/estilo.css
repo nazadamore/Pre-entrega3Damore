@@ -638,9 +638,10 @@ body {
       text-align: center; }
     .container_404 .texto_404 .subtitulo_404 {
       margin: 10px;
+      margin-bottom: 20px;
       text-align: center; }
     .container_404 .texto_404 .form_404 {
-      margin: 10px; }
+      margin: 20px; }
     .container_404 .texto_404 .boton_404 {
       text-align: center; }
       .container_404 .texto_404 .boton_404 .btn {
